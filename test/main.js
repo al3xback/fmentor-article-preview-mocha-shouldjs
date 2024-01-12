@@ -29,10 +29,10 @@ describe('DOM', () => {
 	});
 
 	it('should have an empty alt attribute value of card drawer image element', () => {
-		const cardDrawerImageEl = document.querySelector('.card__image img');
-		const cardDrawerImageAlt = cardDrawerImageEl.getAttribute('alt');
+		const cardDrawerImgEl = document.querySelector('.card__image img');
+		const cardDrawerImgAlt = cardDrawerImgEl.getAttribute('alt');
 
-		cardDrawerImageAlt.should.be.empty();
+		cardDrawerImgAlt.should.be.empty();
 	});
 
 	it("should have a post date element with a class of 'card__author-post-date'", () => {
