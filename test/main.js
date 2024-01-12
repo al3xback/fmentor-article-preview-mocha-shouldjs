@@ -29,8 +29,8 @@ describe('DOM', () => {
 	});
 
 	it('should have an empty alt attribute value of card drawer image element', () => {
-		const cardDrawerImageAlt =
-			document.querySelector('.card__image img').alt;
+		const cardDrawerImageEl = document.querySelector('.card__image img');
+		const cardDrawerImageAlt = cardDrawerImageEl.getAttribute('alt');
 
 		cardDrawerImageAlt.should.be.empty();
 	});
